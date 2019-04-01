@@ -1,0 +1,6 @@
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\BookEvent.Common\bin\Debug\BookEvent.Common.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\BookEvent.Common\bin\Debug\BookEvent.Common.pdb
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\BookEvent.Common\obj\Debug\BookEvent.Common.csprojAssemblyReference.cache
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\BookEvent.Common\obj\Debug\BookEvent.Common.csproj.CoreCompileInputs.cache
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\BookEvent.Common\obj\Debug\BookEvent.Common.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\BookEvent.Common\obj\Debug\BookEvent.Common.pdb

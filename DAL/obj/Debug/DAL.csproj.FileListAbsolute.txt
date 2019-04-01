@@ -1,0 +1,14 @@
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\DAL.dll.config
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\DAL.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\DAL.pdb
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\BookEvent.Common.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\EntityFramework.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\BookEvent.Common.pdb
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\EntityFramework.xml
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\obj\Debug\DAL.dll
+C:\Users\haardiksikka\source\repos\BookReadingEventApplication\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,134 @@
+﻿@model BookReadingEventApplication.Models.EventsWrappper
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    
+}
+
+<h2>Future Events</h2>
+
+
+@*@using (Html.BeginForm("Index", "Student", FormMethod.Get))
+    {
+        <p>
+            Find by name:@Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+            <input type="submit" value="Search" />
+
+        </p>
+    }*@
+
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.ActionLink("Book Title", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })*@
+            Book Title
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            @*@Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })*@
+            EventDate
+        </th>
+        <th>
+            Event Duration
+        </th>
+        <th>
+            Start Time
+        </th>
+        <th>
+            Event Type
+        </th>
+    </tr>
+
+    @foreach (var item in Model.futureEvents)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.bookTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eventDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eventDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.startTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eventType)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit","Member", new { id = item.eventID }, new { }) |
+                @Html.ActionLink("Details", "Details", "Home", new { id = item.eventID }, new { }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.eventID })
+
+            </td>
+        </tr>
+    }
+
+</table>
+<br />
+<h2>Past Events</h2>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.ActionLink("Book Title", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })*@
+            Book Title
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            @*@Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })*@
+            EventDate
+        </th>
+        <th>
+            Event Duration
+        </th>
+        <th>
+            Start Time
+        </th>
+        <th>
+            Event Type
+        </th>
+    </tr>
+
+    @foreach (var item in @Model.pastEvents)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.bookTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eventDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eventDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.startTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eventType)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Member", new { id = item.eventID }, new { }) |
+                @Html.ActionLink("Details", "Details", "Home", new { id = item.eventID }, new { }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.eventID })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+

@@ -1,0 +1,77 @@
+﻿@model BookReadingEventApplication.Models.EventCommentWrapper
+@{
+   
+}
+
+<h2>Event Details</h2>
+
+<table style="width:100%">
+    <tr>
+        <th>Book Title:</th>
+        <td>@Model.eventModel.bookTitle</td>
+    </tr>
+    <tr>
+        <th>Location:</th>
+        <td>@Model.eventModel.location</td>
+    </tr>
+    <tr>
+        <th>Event Date:</th>
+        <td>@Model.eventModel.eventDate</td>
+    </tr>
+    <tr>
+        <th>Start Time:</th>
+        <td>@Model.eventModel.startTime</td>
+    </tr>
+    <tr>
+        <th>Duration:</th>
+        <td>@Model.eventModel.eventDuration</td>
+    </tr>
+    <tr>
+        <th>Event Type:</th>
+        <td>@Model.eventModel.eventType</td>
+    </tr>
+    <tr>
+        <th>Event Description:</th>
+        <td>@Model.eventModel.description</td>
+    </tr>
+    <tr>
+        <th>No of People Invited:</th>
+        <td>@Model.eventModel.noOfInvites</td>
+    </tr>
+    <tr>
+        <th>Event Created By:</th>
+        <td>@Model.eventModel.userName</td>
+    </tr>
+</table>
+<br />
+<div style="padding:12px 0px 12px 0px;">
+        <h3>Add Comment</h3>
+        @using (Html.BeginForm())
+        {
+             <div class="form-group">
+               
+                    <div>
+                         <textarea rows="4" cols="20" name="postComment" class="form-control" size="40"></textarea>
+                    </div>
+             </div>
+    
+             <div class="form-group">
+                <div>
+                    <input type="submit" value="Post Comment" class="btn btn-default" />
+                </div>
+              </div>
+ 
+
+         }
+
+</div>
+
+<div style="background-color:#f1f1f1;padding:0px 10px 10px 10px;border-style:solid;border-color:grey;border-radius:5px">
+<h3> Comments </h3>
+
+@foreach(var comment in Model.commentList) {
+    <p style="border-style:solid; border-width:1px; border-color:grey; padding:5px; border-radius:6px;"> @comment.comment </p>
+    
+}
+
+</div>

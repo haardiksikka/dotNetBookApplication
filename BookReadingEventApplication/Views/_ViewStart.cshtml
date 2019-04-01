@@ -1,0 +1,14 @@
+﻿@{
+    if (string.Equals(Session["Authenticated"],"Admin"))
+    {
+        Layout = "~/Views/Shared/AdminLayout.cshtml";
+    }
+    else if(Session["Authenticated"]!=null)
+    {
+        Layout = "~/Views/Shared/UserLayout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/Annonymous.cshtml";
+    }
+}
